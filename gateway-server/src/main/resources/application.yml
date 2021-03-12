@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: GlobalFilter
+          args:
+            baseMessage: Spring Cloud Gateway GlobalFilter
+            preLogger: true
+            postLogger: true
+      routes:
+        - id: user-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/user/**
+          filters:
+            - name: UserFilter
+              args:
+                baseMessage: io.nyarosys.gateway.filter.UserFilter
+                preLogger: true
+                postLogger: true
+        - id: shop-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/shop/**
+          filters:
+            - name: ShopFilter
+              args:
+                baseMessage: io.nyarosys.gateway.filter.ShopFilter
+                preLogger: true
+                postLogger: true

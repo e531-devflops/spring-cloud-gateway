@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/gateway-server/gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/shop-service/shop-service.iml" filepath="$PROJECT_DIR$/services/shop-service/shop-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/user-service/user-service.iml" filepath="$PROJECT_DIR$/services/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

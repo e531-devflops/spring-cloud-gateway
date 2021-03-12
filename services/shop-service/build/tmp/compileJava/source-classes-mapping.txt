@@ -1,0 +1,4 @@
+io/nyarosys/shop/ShopApplication.java
+ io.nyarosys.shop.ShopApplication
+io/nyarosys/shop/service/ShopController.java
+ io.nyarosys.shop.service.ShopController
